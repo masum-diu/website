@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto 100px;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: aquamarine;
+  grid-column-start: span 3;
+}
+aside {
+  background-color: rgb(88, 81, 81);
+  grid-column-start: span 1;
+}
+main {
+  background-color: burlywood;
+  grid-column-start: span 2;
+}
+footer {
+  background-color: cyan;
+  grid-column-start: span 3;
+}
