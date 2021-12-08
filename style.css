@@ -23,3 +23,16 @@ footer {
   background-color: cyan;
   grid-column-start: span 3;
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto 100px;
+  }
+  header,
+  aside,
+  main,
+  footer {
+    grid-column-start: span 1;
+  }
+}
